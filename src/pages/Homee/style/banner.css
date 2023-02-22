@@ -1,0 +1,25 @@
+.section2 {
+  background-image: url("../../../../public/imgs/h3-2.jpg.webp");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-top: 20%;
+  height: 60vw;
+
+}
+.section2 img {
+  position: relative;
+  top: -10vw;
+  left: 10vw;
+  width: 20%;
+}
+@media (max-width:640px ) {
+  .section2{
+    position: absolute;
+    background-size: cover;
+    height: 40vh;
+    background-position: 50%;
+  }
+  .section2 img {
+  width: 30%;
+  }
+}

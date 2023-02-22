@@ -1,0 +1,30 @@
+.explore_banner {
+  margin-top: 2vw;
+  height: 50vw;
+  background-image: url("../../../../public/imgs/explore-2-1-2560x1067.jpg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+.explore_banner img {
+  width: 19vw;
+  position: relative;
+  top: -12.7vw;
+  left: 23vw;
+}
+@media (max-width: 640px) {
+  .explore_banner {
+    margin-top: 30vh;
+    height: 50vw;
+    background-image: url("../../../../public/imgs/explore-2-1-2560x1067.jpg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+  }
+  .explore_banner img {
+    width: 40%;
+    position: relative;
+    top: -35vh;
+    left: 45vw;
+  }
+}

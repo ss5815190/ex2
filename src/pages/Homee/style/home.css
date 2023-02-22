@@ -1,0 +1,45 @@
+.mainPage {
+}
+.banner {
+  height: 72.223vw;
+  background-image: url("../../../../public/imgs/h-fv.jpg.webp");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.slogan {
+  align-items: center;
+  font-size: 2.5em;
+  position: absolute;
+  top: 40%;
+  left: 13vw;
+}
+
+/*640px以下套用 手機*/
+
+@media (max-width: 640px) {
+  .mainPage {
+    padding-top: 10vh;
+  }
+
+  .mainPage .banner {
+    height: 50vh;
+    background-image: url("../../../../public/imgs/h-fv.jpg.webp");
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  .mainPage .slogan_place {
+    display: flex;
+    justify-content: center;
+  }
+  .mainPage .slogan {
+    position: static;
+  }
+  .mainPage .slogan h1 {
+    font-size: 1.8em;
+    font-weight: 500;
+    line-height: 50px;
+  }
+}

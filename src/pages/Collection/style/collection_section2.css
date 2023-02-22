@@ -1,0 +1,132 @@
+/*se2*/
+
+.collection_section2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 15vw;
+}
+.collection_section2_wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 67%;
+}
+.collection_section2_img {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.collection_section2_img_1 {
+  width: 19vw;
+}
+.collection_section2_img_2 {
+  width: 27vw;
+  height: 36vw;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.collection_section2_img_2_txt {
+  width: 27vw;
+  text-align: right;
+  white-space: pre-line; /*與預設值差別在於看得懂\n符號或反斜線*/
+}
+
+/*banner*/
+.collection_banner {
+  margin-top: 10vw;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 55vw;
+  display: flex;
+  align-items: center;
+}
+.collection_banner_txt {
+  margin-top: 1vw;
+  width: 97vw;
+  text-align: right;
+  font-weight: 100;
+  white-space: pre-line; /*與預設值差別在於看得懂\n符號或反斜線*/
+}
+
+/*hover*/
+.details {
+  font-weight: 500;
+  font-size: 2em;
+  margin-left: 2vw;
+  opacity: 0;
+}
+.collection_section2_img_2:hover .details {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+.collection_banner:hover .details {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+
+
+@media (max-width: 640px) {
+  .collection_section2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 15vw;
+  }
+  .collection_section2_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 60%;
+  }
+  .collection_section2_img {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .collection_section2_img_1 {
+    width: 40vw;
+    position: relative;
+    top: 15vw;
+    right: 50%;
+  }
+  .collection_section2_img_2 {
+    width: 40vw;
+    height: 52vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+  }
+
+  .collection_section2_img_2_txt {
+    margin-top: 2vh;
+    width: 40vw;
+    text-align: right;
+    white-space: pre-line; /*與預設值差別在於看得懂\n符號或反斜線*/
+  }
+
+  /*banner*/
+  .collection_banner {
+    margin-top: 10vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 55vw;
+    display: flex;
+    align-items: center;
+  }
+  .collection_banner_txt {
+    margin-top: 2vh;
+    width: 95vw;
+    text-align: right;
+    font-weight: 100;
+    white-space: pre-line; /*與預設值差別在於看得懂\n符號或反斜線*/
+  }
+  
+}

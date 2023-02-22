@@ -1,0 +1,27 @@
+/*768px以下套用 平板以下*/
+
+@media only screen and(max-width: 768px) {
+  .item {
+    display: block;
+    height: 30vw;
+    margin-top: 20%;
+  }
+  .item_slogon {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .img_h2 {
+    width: 30%;
+  }
+  .img_h2 img {
+    border-style: solid;
+  }
+  .item_contain {
+    width: 35%;
+    font-size: 1.2em;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}

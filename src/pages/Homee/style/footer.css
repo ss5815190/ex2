@@ -1,0 +1,22 @@
+.hr {
+  display: flex;
+  justify-content: center;
+}
+.b {
+  width: 90%;
+  height: 1px;
+  background-color: black;
+}
+.footer {
+  height: 15vw;
+  background-color: lightgray;
+  /*position: relative;*/
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.footer a {
+  height: 50px;
+  margin-right: 20%;
+  font-size: 1em;
+}

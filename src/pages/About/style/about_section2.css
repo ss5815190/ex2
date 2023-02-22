@@ -1,0 +1,79 @@
+.about_section2 {
+  display: flex;
+  justify-content: center;
+}
+.about_section2 h2 {
+  width: 100%;
+  height: auto;
+  font-weight: 300;
+}
+.about_section2 h2 p {
+  margin: 0;
+}
+.about_section2_wrap {
+  margin-top: 20vw;
+  width: 65%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about_section2_img {
+  width: 40%;
+  position: relative;
+}
+.about_section2_img-1 {
+  width: 17vw;
+  position: absolute;
+  bottom: 0;
+}
+
+.about_section2_txt {
+  width: 45%;
+}
+.about_section2_txt p {
+  margin-top: 2vw;
+}
+/*手機*/
+
+@media (max-width: 640px) {
+  
+  .about_section2 {
+  display: flex;
+  justify-content: center;
+}
+.about_section2 h2 {
+  width: 100%;
+  height: auto;
+  font-weight: 300;
+}
+.about_section2 h2 p {
+  margin: 0;
+}
+.about_section2_wrap {
+  margin-top: 75vh;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about_section2_img {
+  width: 100%;
+  position: relative;
+  top: -30%;
+}
+.about_section2_img-1 {
+  width: 50vw;
+  position: absolute;
+}
+
+.about_section2_txt {
+  width: 90%;
+  font-size: 14px;
+}
+.about_section2_txt p {
+  margin-top: 5vh;
+}
+  
+}
