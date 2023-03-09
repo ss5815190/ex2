@@ -1,7 +1,7 @@
 .nav {
   width: 100%;
 }
-a {
+.nav a {
   text-decoration: none;
   color: black;
 }
@@ -9,16 +9,44 @@ a {
   color: gray;
   cursor: pointer;
 }
-ul {
+.nav ul {
   display: flex;
   justify-content: flex-end;
   position: fixed;
   right: 3em;
   z-index: 100;
 }
-li {
+.nav li {
   font-size: 1em;
   list-style: none;
   margin: 10px;
   font-weight: 400;
+}
+.nav .navButton{/*手機選單按鈕*/
+  display: none;
+}
+@media (max-width:640px){
+  .nav-Close{
+    right: 60px;
+    top: 2px;
+    transition: .5s;
+    transform: translateX(110%);
+  }
+  .nav-Open{
+    right: 60px;
+    top: 2px;
+    transition: .5s;
+    transform: translateX(0%);
+  }
+  .nav .navButton{/*手機選單按鈕*/
+    display: block;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0);
+    top: 25px;
+    right: 4vw;
+    z-index: 101;
+    font-weight: bold;
+    border-style: none;
+    transition: .5s;  
+  }
 }
