@@ -18,6 +18,9 @@ img {
   height: auto;
   user-select: none;
 }
+a{
+  color: black;
+}
 h1 {
   font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1440 - 300)));
 }

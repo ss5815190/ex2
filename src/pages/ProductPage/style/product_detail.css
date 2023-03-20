@@ -45,6 +45,8 @@
 .product .ifwrap a {
   border-bottom-style: solid;
   border-color: gray;
+  color: blue;
+  text-decoration: none;
 }
 
 /*close_icon*/
