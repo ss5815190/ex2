@@ -1,17 +1,18 @@
 import { useEffect } from "react";
-export default function Cssdisplay() {
+ const Cssdisplay=(tag)=> {
     useEffect(() => {
-        const allBox = document.querySelectorAll('img');
+        const allBox = document.querySelectorAll(tag);
         console.log(allBox)
         const checkbox=()=>{
-    
+            
             allBox.forEach((box)=>{
-                //條件一：頂部小於頁面高度
+                const boxRect = box.getBoundingClientRect();
+                const boxTop = boxRect.top + window.pageYOffset;
+                const boxBottom = boxRect.bottom + window.pageYOffset;
                 const currentPosition = window.scrollY + window.innerHeight;
-                const boxPosition = box.offsetTop;
-                const boxAppear = currentPosition > boxPosition;
+                //條件一：頂部小於頁面高度
+                const boxAppear = currentPosition > boxTop;
                 //條件二：底部高於頁面高度
-                const boxBottom = box.offsetTop + box.clientHeight;
                 const boxOnWindow = window.scrollY < boxBottom;
 
                 if(boxOnWindow && boxAppear) {
@@ -19,7 +20,7 @@ export default function Cssdisplay() {
                 box.classList.add('active');
                 } else {
                 //不符合出現條件，移除active此class
-               
+                box.classList.remove('active');
                 };
                 })
         
@@ -30,7 +31,9 @@ export default function Cssdisplay() {
         return () => {
         window.removeEventListener('scroll', checkbox, true);
         };
-    }, );
+    },[]);
 
+    
     return null;
 }
+export default Cssdisplay;
