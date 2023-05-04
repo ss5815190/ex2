@@ -3,7 +3,9 @@ import ExploreSection1 from "./components/Explore_section1.js";
 import ExploreSection2 from "./components/Explore_section2.js";
 import ExploreBanner from "./components/Explore_banner.js";
 import Footer from "../Homee/components/footer.js";
+import Cssdisplay from "../../components/cssdisplay.js";
 const Explore = () => {
+  Cssdisplay('img')
   return (
     <div>
       <Nav />

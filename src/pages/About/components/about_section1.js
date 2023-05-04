@@ -1,6 +1,7 @@
 import "../style/about_section1.css";
 
 const About_section1 = () => {
+  
   return (
     <div className="about_section1">
       <div className="about_section1_wrap">
@@ -9,13 +10,13 @@ const About_section1 = () => {
             className="about_section1_img-1"
             src="./imgs/about-1-1.jpg.webp"
             alt=""
-            loading="lazy"
+            
           />
           <img
             className="about_section1_img-2"
             src="./imgs/about-1-2.jpg.webp"
             alt=""
-            loading="lazy"
+            
           />
         </div>
 

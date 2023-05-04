@@ -4,7 +4,9 @@ import About_section2 from "./components/about_section2.js";
 import About_banner from "./components/about_banner.js";
 import About_section3 from "./components/about_section3.js";
 import Footer from "../Homee/components/footer.js";
+import Cssdisplay from "../../components/cssdisplay.js";
 const About = () => {
+  Cssdisplay('img')
   return (
     <div>
       <Nav />

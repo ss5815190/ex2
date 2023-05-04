@@ -6,7 +6,9 @@ import CollectionSection3 from "./components/collection_section3.js";
 
 //import { irData } from "../../components/data/irregularData.js";
 import { lookData } from "../../components/data/lookData.js";
+import Cssdisplay from "../../components/cssdisplay.js";
 const Collection = () => {
+  Cssdisplay('img')
   return (
     <div>
       <Nav />

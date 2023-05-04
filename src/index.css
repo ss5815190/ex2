@@ -18,8 +18,8 @@ img {
   height: auto;
   user-select: none;
   object-fit: contain;
-  opacity: 1;
-  transition: 1s;
+  opacity: 0;
+  transition: 1.5s;
 }
 .active{
   opacity: 1;
